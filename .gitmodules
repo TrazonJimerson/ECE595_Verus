@@ -1,0 +1,3 @@
+[submodule "safe-autonomy-sims"]
+	path = safe-autonomy-sims
+	url = https://github.com/act3-ace/safe-autonomy-sims
