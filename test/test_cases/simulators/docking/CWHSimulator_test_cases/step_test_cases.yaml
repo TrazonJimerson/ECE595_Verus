@@ -1,0 +1,22 @@
+- step_size: 1
+  expected_platform_configs: [
+        {
+            "platform_name": "blue0",
+            "sim_time": 1.0,
+            "platform__position": "np.array([0, 0, 0])",
+            "platform__velocity": "np.array([0, 0, 0])"
+        },
+    ]
+  reset_config: {
+        "platforms": {
+            "blue0": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "x_dot": 0,
+                "y_dot": 0,
+                "z_dot": 0
+            },
+
+        }
+    }
