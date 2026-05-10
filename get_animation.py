@@ -85,8 +85,8 @@ class SixDofAnimation(BaseAnimationModule):
 
     def __init__(
         self,
-        expr_config_path: str = 'safe-autonomy-sims/configs/weighted-six-dof-inspection-v2/experiment.yml',
-        task_config_path: str = 'safe-autonomy-sims/configs/weighted-six-dof-inspection-v2/task.yml',
+        expr_config_path: str = r'safe-autonomy-sims\configs\multiagent-weighted-six-dof-inspection\experiment.yml',
+        task_config_path: str = r'safe-autonomy-sims\configs\multiagent-weighted-six-dof-inspection\task.yml',
         platform_serializer_class: PlatformSerializer = SerializeCWH3D,
         radius: float = 10.,
         num_points: int = 100,
@@ -261,5 +261,5 @@ class SixDofAnimation(BaseAnimationModule):
 
 
 if __name__ == '__main__':
-    animation = SixDofAnimation(checkpoint_path='example_checkpoint')
+    animation = SixDofAnimation(checkpoint_path=r'./checkpoint_000065')
     animation.make_animation(filetype='gif')
