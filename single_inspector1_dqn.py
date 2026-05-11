@@ -333,6 +333,7 @@ config = (
 # algo.stop()
 # ray.shutdown()
 
+localdir = os.path.abspath("./output")
 
 tune.run(
     "DQN",
@@ -340,4 +341,5 @@ tune.run(
     stop={"timesteps_total": 100000 if not os.environ.get("CI") else 50000},
     checkpoint_freq=10,
     config=config.to_dict(),
+    local_dir=localdir,
 )

@@ -3,6 +3,8 @@
 Our explainability project relies upon [`safe-autonomy-sims`](https://github.com/act3-ace/safe-autonomy-sims) package which requires Python 3.10
 
 We use [`ray`](https://github.com/ray-project/ray) for training our RL expert policy which requires a unix interpreter. If you are on Windows, we reccomend you use [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) and install the Ubuntu-24.04 distribution.
+
+For the explainability piece of our project, please visit our sister repo [`VerusProject`](https://github.com/hsvalenz/VerusProject) for the VIPER implementation.
 ## Installation
 
 The easiest way to install our requirements is to use `requirements.txt` via `pip`:
